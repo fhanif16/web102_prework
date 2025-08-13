@@ -21,7 +21,18 @@ body {
 
 .stats-container {
     display: flex;
+    align-items: center;
+
+ 
 }
+
+.stats-container :hover {
+    
+cursor: pointer;
+box-shadow: 0 0 30px lightblue;
+ 
+}
+
 
 .stats-card {
     background-color: #a8b0bc;
@@ -55,11 +66,16 @@ body {
     width: 300px;
     text-align: center;
     border-radius: 7px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .game-card:hover {
     cursor: pointer;
     box-shadow: 0 0 30px lightblue;
+    transform: scale(1.05);
+     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 #button-container {
@@ -72,4 +88,11 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+}
+
+
+.description-text {
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
 }
